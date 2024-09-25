@@ -46,13 +46,20 @@ a {
 	--nav-font-size: 14px;
 	--p-font-size: ;
 	--avatar-width: 100px;
+	--avatar-border-radius: 50px;
 	--primary-color: #fff;
 	--secondary-color: #8e8e8e;
 	--tertiary-color: #B87333;
+
 }
 
-.body__container {
+body {
 	background-color: var(--secondary-color);
+}
+
+
+.body__container {
+	color: var(--primary-color);
 }
 
 .container {
@@ -64,6 +71,7 @@ a {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	border-bottom: solid 1px var(--primary-color);
 }
 
 .nav__menu {
@@ -96,11 +104,33 @@ a {
 	gap: 8px;
 }
 
+#about-me {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.about-me__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.about-me__info p {
+	text-align: center;
+}
+
 .about-me__image {
 	width: var(--avatar-width);
+	
 }
 
 .about-me__image img {
 	width: 100%;
+	border-radius: var(--avatar-border-radius);
 }
 

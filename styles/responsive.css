@@ -2,19 +2,54 @@
 /* A partir de aquí es para dar estilo par diferentes tamaños de pantalla */
 
 /* Media query para dispositivos tablet (mayores a 480px y hasta 1023px) */
-@media (min-width: 481px) and (max-width: 1023px) {
+@media (min-width: 481px) {
     :root {
         --container-width: 85%;
         --nav-font-size: 16px;
-        --avatar-width: 200px;
+        --avatar-width: 160px;
+        --avatar-border-radius: 80px;
     }
+
+    
+    #about-me {
+        flex-direction: row;
+    }
+
+    .about-me__info {
+        flex: 1;
+    }
+
+
 }
 
 /* Media query para dispositivos de escritorio (mayores a 1024px y hasta 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) {
     :root {
         --container-width: 75%;
         --avatar-width: 260px;
+        --avatar-border-radius: 130px;
+    }
+
+    .nav {
+        border-bottom: 0px;
+    }
+
+    .nav__menu {
+        padding: 16px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 24px;
+    }
+
+
+    .nav__menu::before {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: var(--primary-color);
+    min-width: 20px;
+    margin: auto;
     }
 }
 
