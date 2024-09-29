@@ -1,61 +1,88 @@
-/* Responsive */
-/* A partir de aquí es para dar estilo par diferentes tamaños de pantalla */
-
-/* Media query para dispositivos tablet (mayores a 480px y hasta 1023px) */
 @media (min-width: 481px) {
-    :root {
-        --container-width: 85%;
-        --nav-font-size: 16px;
-        --avatar-width: 160px;
-        --avatar-border-radius: 80px;
-    }
+	:root {
+		--container-width: 85%;
+		--nav-font-size: 18px;
+		--title-font-size: 52px;
+		--subtitle-font-size: 28px;
+		--p-font-size: 20px;
+		--section-title-font-size: 36px;
+		--avatar-width: 180px;
+		--avatar-border-radius: 90px;
+	}
 
-    
-    #about-me {
-        flex-direction: row;
-    }
+	.nav {
+		margin-bottom: 100px;
+	}
 
-    .about-me__info {
-        flex: 1;
-    }
+	.nav__menu {
+		padding: 16px 0;
+	}
 
+	.hero__content {
+		margin-bottom: 100px;
+	}
+
+	.about-me__content {
+		flex-direction: row;
+		justify-content: space-around;
+		padding-bottom: 72px;
+	}
+
+	.about-me__info {
+		max-width: 60%;
+		align-items: flex-start;
+		flex: 1;
+	}
 
 }
 
-/* Media query para dispositivos de escritorio (mayores a 1024px y hasta 1439px) */
+
 @media (min-width: 1024px) {
-    :root {
-        --container-width: 75%;
-        --avatar-width: 260px;
-        --avatar-border-radius: 130px;
-    }
+	:root {
+		--container-width: 80%;
+        --nav-font-size: 24px;
+        --title-font-size: 100px;
+		--subtitle-font-size: 52px;
+		--p-font-size: 28px;
+		--section-title-font-size: 60px;
+		--avatar-width: 260px;
+		--avatar-border-radius: 130px;
+	}
 
-    .nav {
-        border-bottom: 0px;
-    }
+	.nav {
+		justify-content: space-between;
+		margin-bottom: 120px;
+	}
 
-    .nav__menu {
-        padding: 16px;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        gap: 24px;
-    }
+	.nav__container {
+		border-bottom: 0px;
+	}
 
+	.nav__menu {
+		padding: 24px;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		gap: 28px;
+	}
 
-    .nav__menu::before {
-    content: '';
-    flex-grow: 1;
-    height: 1px;
-    background: var(--primary-color);
-    min-width: 20px;
-    margin: auto;
-    }
+	.nav__menu::before {
+		content: "";
+		flex-grow: 1;
+		height: 1px;
+		background: var(--primary-color);
+		min-width: 20px;
+		margin: auto;
+	}
+
+	.hero__content {
+		margin-bottom: 200px;
+	}
 }
 
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
 	:root {
-        --container-width: 75%;
-    }
+		--container-width: 75%;
+	}
 }
