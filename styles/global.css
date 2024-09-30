@@ -181,6 +181,43 @@ p {
 	justify-content: center;
 	align-items: center;
 }
+
 .experience__work p {
 	text-align: center;
+}
+
+.projects__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects__captures {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects__item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.projects__item a {
+	gap: 16px;
+}
+
+.projects__image {
+	width: 300px;
+}
+
+.projects__image img {
+	width: 100%;
 }

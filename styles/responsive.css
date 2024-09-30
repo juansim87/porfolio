@@ -10,7 +10,17 @@
 		--avatar-border-radius: 90px;
 	}
 
+	.container {
+		padding-bottom: 64px;
+		margin-bottom: 64px;
+	}
+
+	.nav__content .container {
+		padding-bottom: 0px;
+	}
+
 	.nav {
+		padding-bottom: 0;
 		margin-bottom: 120px;
 	}
 
@@ -25,8 +35,6 @@
 	.about-me__content {
 		flex-direction: row;
 		justify-content: space-around;
-		padding-bottom: 72px;
-		margin-bottom: 88px;
 	}
 
 	.about-me__info {
@@ -36,18 +44,49 @@
 	}
 
 	.experience__content {
-		padding-bottom: 72px;
-		margin-bottom: 88px;
+		gap: 20px;
 	}
 
-}
+	.experience__work {
+		width: 100%;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 20px;
+	}
 
+	.experience__name {
+		flex-direction: row;
+		gap: 12px;
+	}
+
+	.experience__work p {
+		text-align: justify;
+	}
+
+	.projects__content {
+		gap: 20px;
+	}
+
+	.projects__captures {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.projects__item {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+		gap: 20px;
+	}
+}
 
 @media (min-width: 1024px) {
 	:root {
 		--container-width: 80%;
-        --nav-font-size: 24px;
-        --title-font-size: 100px;
+		--nav-font-size: 24px;
+		--title-font-size: 100px;
 		--subtitle-font-size: 52px;
 		--p-font-size: 28px;
 		--section-title-font-size: 60px;
