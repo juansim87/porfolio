@@ -28,7 +28,6 @@ dd {
 	padding: 0;
 }
 
-
 ul {
 	list-style-type: none;
 }
@@ -42,7 +41,7 @@ a {
 	--container-width: 90%;
 	--title-font-size: 36px;
 	--subtitle-font-size: 20px;
-	--nav-font-size: 14px;
+	--nav-font-size: 10px;
 	--p-font-size: 15px;
 	--section-title-font-size: 26px;
 	--avatar-width: 140px;
@@ -58,10 +57,15 @@ body {
 
 h1 {
 	font-size: var(--title-font-size);
+	text-transform: uppercase;
 }
 
 h2 {
 	font-size: var(--section-title-font-size);
+}
+
+p {
+	font-size: var(--p-font-size);
 }
 
 .body__container {
@@ -71,17 +75,15 @@ h2 {
 .container {
 	width: var(--container-width);
 	margin: 0 auto;
+	padding-bottom: 32px;
+	margin-bottom: 32px;
+	border-bottom: var(--section-divider);
 }
 
-.nav {
-	width: 100%;
+.nav__content {
 	display: flex;
 	align-items: center;
-	margin-bottom: 40px;
-}
-
-.nav__container {
-	border-bottom: var(--section-divider);
+	padding-bottom: 0;
 }
 
 .nav__menu {
@@ -102,7 +104,7 @@ h2 {
 
 #hero {
 	width: 100%;
-	margin-bottom: 48px;
+	margin-bottom: 60px;
 }
 
 .hero__content {
@@ -112,11 +114,10 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	gap: 12px;
-	margin-bottom: 20px;
+	border-bottom: 0;
 }
 
-
-.hero__content p {
+.hero__content small {
 	font-size: var(--subtitle-font-size);
 }
 
@@ -126,8 +127,6 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	gap: 28px;
-	padding-bottom: 28px;
-	border-bottom: var(--section-divider);
 	
 }
 
@@ -138,14 +137,11 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	gap: 24px;
-	
 }
 
 .about-me__info h2 {
 	font-size: var(--section-title-font-size);
-	
 }
-
 
 .about-me__info p {
 	font-size: var(--p-font-size);
@@ -159,4 +155,32 @@ h2 {
 .about-me__image img {
 	width: 100%;
 	border-radius: var(--avatar-border-radius);
+}
+
+.experience__content {
+	padding-bottom: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.experience__work {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.experience__name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.experience__work p {
+	text-align: center;
 }

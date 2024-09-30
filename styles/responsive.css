@@ -11,7 +11,7 @@
 	}
 
 	.nav {
-		margin-bottom: 100px;
+		margin-bottom: 120px;
 	}
 
 	.nav__menu {
@@ -19,19 +19,25 @@
 	}
 
 	.hero__content {
-		margin-bottom: 100px;
+		margin-bottom: 160px;
 	}
 
 	.about-me__content {
 		flex-direction: row;
 		justify-content: space-around;
 		padding-bottom: 72px;
+		margin-bottom: 88px;
 	}
 
 	.about-me__info {
 		max-width: 60%;
 		align-items: flex-start;
 		flex: 1;
+	}
+
+	.experience__content {
+		padding-bottom: 72px;
+		margin-bottom: 88px;
 	}
 
 }
@@ -49,12 +55,17 @@
 		--avatar-border-radius: 130px;
 	}
 
+	.container {
+		padding-bottom: 72px;
+		margin-bottom: 72px;
+	}
+
 	.nav {
 		justify-content: space-between;
 		margin-bottom: 120px;
 	}
 
-	.nav__container {
+	.nav__content {
 		border-bottom: 0px;
 	}
 
