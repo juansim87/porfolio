@@ -40,10 +40,11 @@ a {
 :root {
 	--container-width: 90%;
 	--title-font-size: 36px;
-	--subtitle-font-size: 20px;
+	--subtitle-font-size: 16px;
 	--nav-font-size: 10px;
-	--p-font-size: 15px;
-	--section-title-font-size: 26px;
+	--p-font-size: 14px;
+	--section-title-font-size: 28px;
+	--item-font-size: 24px;
 	--avatar-width: 140px;
 	--avatar-border-radius: 70px;
 	--primary-color: #fff;
@@ -64,8 +65,16 @@ h2 {
 	font-size: var(--section-title-font-size);
 }
 
+h3 {
+	font-size: var(--item-font-size);
+}
+
 p {
 	font-size: var(--p-font-size);
+}
+
+span {
+	font-size: var(--subtitle-font-size);
 }
 
 .body__container {
@@ -220,10 +229,58 @@ p {
 	width: 100%;
 }
 
+.skill__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.skill__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.skill__items {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
 .skill__image {
 	width: 100px;
 }
 
 .skill__image img {
 	width: 100%;
+}
+
+.contact__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.contact__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }

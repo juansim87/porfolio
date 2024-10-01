@@ -3,9 +3,10 @@
 		--container-width: 85%;
 		--nav-font-size: 18px;
 		--title-font-size: 52px;
-		--subtitle-font-size: 28px;
+		--subtitle-font-size: 22px;
 		--p-font-size: 20px;
 		--section-title-font-size: 36px;
+		--item-font-size: 30px;
 		--avatar-width: 180px;
 		--avatar-border-radius: 90px;
 	}
@@ -77,6 +78,16 @@
 		flex: 1;
 		gap: 20px;
 	}
+
+	.skill__items {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.skill__image {
+		width: 200px;
+	}
+
 }
 
 @media (min-width: 1024px) {
@@ -84,9 +95,10 @@
 		--container-width: 80%;
 		--nav-font-size: 24px;
 		--title-font-size: 100px;
-		--subtitle-font-size: 52px;
+		--subtitle-font-size: 38px;
 		--p-font-size: 28px;
 		--section-title-font-size: 60px;
+		--item-font-size: 52px;
 		--avatar-width: 260px;
 		--avatar-border-radius: 130px;
 	}
@@ -124,6 +136,10 @@
 
 	.hero__content {
 		margin-bottom: 200px;
+	}
+
+	.skill__items {
+		gap: 40px;
 	}
 }
 
