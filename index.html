@@ -20,7 +20,7 @@
 	<body>
 		<div class="body__container">
 			<nav class="nav">
-				<div class="nav__content container">
+				<div class="nav__content container divider">
 					<ul class="nav__menu">
 						<li><a href="#about-me">Sobre mí</a></li>
 						<li><a href="#experience">Experiencia</a></li>
@@ -32,13 +32,13 @@
 			</nav>
 			<main class="main">
 				<section class="hero">
-					<div class="hero__content container">
+					<div class="hero__content container divider">
 						<h1>Juan Simón</h1>
 						<span>Frontend engineer</span>
 					</div>
 				</section>
 				<section id="about-me">
-					<div class="about-me__content container">
+					<div class="about-me__content container divider">
 						<div class="about-me__info">
 							<h2>Sobre mí</h2>
 							<p>
@@ -54,7 +54,7 @@
 					</div>
 				</section>
 				<section id="experience">
-					<div class="experience__content container">
+					<div class="experience__content container divider">
 						<h2>Experiencia laboral</h2>
 						<div class="experience__work">
 							<div class="experience__name">
@@ -79,7 +79,7 @@
 					</div>
 				</section>
 				<section id="projects">
-					<div class="projects__content container">
+					<div class="projects__content container divider">
 						<h2>Proyectos</h2>
 						<div class="projects__captures">
 							<a href="">
@@ -119,7 +119,7 @@
 					</div>
 				</section>
 				<section id="skills">
-					<div class="skill__content container">
+					<div class="skill__content container divider">
 						<h2>Habilidades</h2>
 						<div class="skill__items">
 							<div class="skill__item">
@@ -170,59 +170,63 @@
 							enctype="application/x-www-form-urlencoded"
 						>
 							<div class="contact__form">
-								<div class="contact__item">
-									<label for="name">Nombre</label>
-									<input
-										type="text"
-										id="name"
-										name="name"
-										placeholder="Escribe tu nombre"
-										minlength="4"
-										maxlength="15"
-										required
-									/>
+								<div class="contact__info">
+									<div class="contact__item">
+										<label for="name">Nombre</label>
+										<input
+											type="text"
+											id="name"
+											name="name"
+											placeholder="Escribe tu nombre"
+											minlength="4"
+											maxlength="15"
+											required
+										/>
+									</div>
+									<div class="contact__item">
+										<label for="last-name">Apellidos</label>
+										<input
+											type="text"
+											id="last-name"
+											name="last-name"
+											placeholder="Escribe tu/s apellido/s"
+											minlength="3"
+											maxlength="25"
+											required
+										/>
+									</div>
 								</div>
-								<div class="contact__item">
-									<label for="last-name">Apellidos</label>
-									<input
-										type="text"
-										id="last-name"
-										name="last-name"
-										placeholder="Escribe tu/s apellido/s"
-										minlength="3"
-										maxlength="25"
-										required
-									/>
-								</div>
-								<div class="contact__item">
-									<label for="email">Email</label>
-									<input
-										type="email"
-										name="email"
-										id="email"
-										placeholder="Escribe tu e-mail"
-										pattern=".+@example\.com"
-										required
-									/>
-								</div>
-								<div class="contact__item">
-									<label for="message">Déjame tu mensaje</label>
-									<textarea
-										name="message"
-										id="message"
-										cols="20"
-										rows="5"
-										placeholder="Escríbenos cualquier duda o propuesta que tengas para nosotros"
-										required
-									></textarea>
-									<p>
-										O envíame un correo a
-										<a href="mailto:info@juansimon.es">info@juansimon.es</a>
-									</p>
-								</div>
-								<div>
-									<button type="reset">Limpiar campos</button>
-									<button type="submit">Enviar información</button>
+								<div class="contact__mail">
+									<div class="contact__item">
+										<label for="email">Email</label>
+										<input
+											type="email"
+											name="email"
+											id="email"
+											placeholder="Escribe tu e-mail"
+											pattern=".+@example\.com"
+											required
+										/>
+									</div>
+									<div class="contact__item">
+										<label for="message">Déjame tu mensaje</label>
+										<textarea
+											name="message"
+											id="message"
+											cols="20"
+											rows="5"
+											placeholder="Dudas y propuestas"
+											required
+										></textarea>
+										<p>
+											O envíame un correo a
+											<a href="mailto:info@juansimon.es">info@juansimon.es</a>
+										</p>
+									</div>
+									<div>
+										<button type="reset">Limpiar campos</button>
+										<button type="submit">Enviar información</button>
+									</div>
 								</div>
 							</div>
 						</form>

@@ -47,7 +47,7 @@ a {
 	--item-font-size: 24px;
 	--avatar-width: 140px;
 	--avatar-border-radius: 70px;
-	--primary-color: #fff;
+	--primary-color: rgb(196, 196, 196);
 	--section-divider: 1px solid var(--primary-color);
 }
 
@@ -77,6 +77,17 @@ span {
 	font-size: var(--subtitle-font-size);
 }
 
+li {
+	padding: 4px;
+	border-radius: 2px;
+}
+
+li:hover {
+	background-color: var(--primary-color);
+	color: black;
+	transition: ease-in 0.2s;
+}
+
 .body__container {
 	color: var(--primary-color);
 }
@@ -84,8 +95,11 @@ span {
 .container {
 	width: var(--container-width);
 	margin: 0 auto;
-	padding-bottom: 32px;
+}
+
+.divider {
 	margin-bottom: 32px;
+	padding-bottom: 32px;
 	border-bottom: var(--section-divider);
 }
 
@@ -223,10 +237,13 @@ span {
 
 .projects__image {
 	width: 300px;
+	border-radius: 10px;
 }
 
 .projects__image img {
 	width: 100%;
+	height: 100%;
+	border-radius: 10px;
 }
 
 .skill__content {
@@ -267,6 +284,7 @@ span {
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	border-bottom: 0;
 }
 
 .contact__form {
@@ -283,4 +301,16 @@ span {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
+}
+
+.contact__info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contact__mail {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
