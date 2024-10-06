@@ -20,7 +20,7 @@
 	<body>
 		<div class="body__container">
 			<nav class="nav">
-				<div class="nav__content container divider">
+				<div class="nav__content container">
 					<ul class="nav__menu">
 						<li><a href="#about-me">Sobre mí</a></li>
 						<li><a href="#experience">Experiencia</a></li>
@@ -31,8 +31,8 @@
 				</div>
 			</nav>
 			<main class="main">
-				<section class="hero">
-					<div class="hero__content container divider">
+				<section id="hero">
+					<div class="hero__content container">
 						<h1>Juan Simón</h1>
 						<span>Frontend engineer</span>
 					</div>
@@ -84,7 +84,10 @@
 						<div class="projects__captures">
 							<a href="">
 								<div class="projects__item">
-									<h3>Web Netflix</h3>
+									<div class="projects__name">
+										<img src="/media/logos/github-logo-white.svg" alt="logo de GitHub" />
+										<h3>Web Netflix</h3>
+									</div>
 									<div class="projects__image">
 										<img
 											src="/media/images/clon-netflix-captura.jpg"
@@ -94,8 +97,9 @@
 								</div>
 							</a>
 							<a href="">
-								<div class="projects__item">
-									<h3>Web El Tiempo</h3>
+								<div class="projects__item"><div class="projects__name">
+									<img src="/media/logos/github-logo-white.svg" alt="logo de GitHub" />
+									<h3>Web El Tiempo</h3></div>
 									<div class="projects__image">
 										<img
 											src="/media/images/clon-el-tiempo-captura.jpg"
@@ -105,8 +109,9 @@
 								</div>
 							</a>
 							<a href="">
-								<div class="projects__item">
-									<h3>Web Trello</h3>
+								<div class="projects__item"><div class="projects__name">
+									<img src="/media/logos/github-logo-white.svg" alt="logo de GitHub" />
+									<h3>Web Trello</h3></div>
 									<div class="projects__image">
 										<img
 											src="/media/images/clon-trello-captura.jpg"
@@ -144,6 +149,15 @@
 								</div>
 							</div>
 							<div class="skill__item">
+								<h3>TypeScript</h3>
+								<div class="skill__image">
+									<img
+										src="/media/logos/ts-logo.png"
+										alt="logo de TypeScript"
+									/>
+								</div>
+							</div>
+							<div class="skill__item">
 								<h3>React</h3>
 								<div class="skill__image">
 									<img src="/media/logos/react-logo.png" alt="logo de React" />
@@ -170,63 +184,55 @@
 							enctype="application/x-www-form-urlencoded"
 						>
 							<div class="contact__form">
-								<div class="contact__info">
-									<div class="contact__item">
-										<label for="name">Nombre</label>
-										<input
-											type="text"
-											id="name"
-											name="name"
-											placeholder="Escribe tu nombre"
-											minlength="4"
-											maxlength="15"
-											required
-										/>
+								<div class="contact__box">
+									<div class="contact__info">
+										<div class="contact__item">
+											<label for="name">Nombre</label>
+											<input
+												type="text"
+												id="name"
+												name="name"
+												placeholder="Escribe tu nombre"
+												minlength="4"
+												maxlength="15"
+												required
+											/>
+										</div>
+										<div class="contact__item">
+											<label for="email">Email</label>
+											<input
+												type="email"
+												name="email"
+												id="email"
+												placeholder="Escribe tu e-mail"
+												pattern=".+@example\.com"
+												required
+											/>
+										</div>
 									</div>
-									<div class="contact__item">
-										<label for="last-name">Apellidos</label>
-										<input
-											type="text"
-											id="last-name"
-											name="last-name"
-											placeholder="Escribe tu/s apellido/s"
-											minlength="3"
-											maxlength="25"
-											required
-										/>
+									<div class="contact__mail">
+										<div class="contact__item">
+											<label for="message">Déjame tu mensaje</label>
+											<textarea
+												name="message"
+												id="message"
+												cols="20"
+												rows="5"
+												placeholder="Dudas y propuestas"
+												required
+											></textarea>
+										</div>
+										<div class="contact__item">
+											<p>
+												O, si lo prefieres, envíame un correo a
+												<a href="mailto:info@juansimon.es">info@juansimon.es</a>
+											</p>
+										</div>
 									</div>
 								</div>
-								<div class="contact__mail">
-									<div class="contact__item">
-										<label for="email">Email</label>
-										<input
-											type="email"
-											name="email"
-											id="email"
-											placeholder="Escribe tu e-mail"
-											pattern=".+@example\.com"
-											required
-										/>
-									</div>
-									<div class="contact__item">
-										<label for="message">Déjame tu mensaje</label>
-										<textarea
-											name="message"
-											id="message"
-											cols="20"
-											rows="5"
-											placeholder="Dudas y propuestas"
-											required
-										></textarea>
-										<p>
-											O envíame un correo a
-											<a href="mailto:info@juansimon.es">info@juansimon.es</a>
-										</p>
-									</div>
-									<div>
-										<button type="reset">Limpiar campos</button>
-										<button type="submit">Enviar información</button>
-									</div>
+								<div class="contact__buttons">
+									<button type="reset">Limpiar campos</button>
+									<button type="submit">Enviar información</button>
 								</div>
 							</div>
 						</form>
