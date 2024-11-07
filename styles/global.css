@@ -7,6 +7,7 @@
 html,
 body {
 	font-family: "Kanit", sans-serif;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -39,7 +40,7 @@ a {
 }
 
 :root {
-	--container-width: 90%;
+	--container-width: 95%;
 	--title-font-size: 36px;
 	--subtitle-font-size: 16px;
 	--nav-font-size: 10px;
@@ -49,7 +50,7 @@ a {
 	--avatar-width: 140px;
 	--avatar-border-radius: 70px;
 	--primary-color: #c4c4c4;
-	--secondary-color:#c4ba2d;
+	--secondary-color:#F4E409;
 	--section-divider: 1px solid var(--primary-color);
 }
 
@@ -209,18 +210,13 @@ li:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 8px;
 }
 
 .experience__name {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.experience__work p {
-	text-align: center;
 }
 
 .projects__content {
@@ -278,6 +274,7 @@ li:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	padding: 40px;
 }
 
 .skill__items {
@@ -294,6 +291,7 @@ li:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	flex: 1;
 }
 
 .skill__image {
@@ -333,15 +331,18 @@ li:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	gap: 10px;
 }
 
 .contact__info {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
+
+.contact__info input {
+	width: 100%;}
 
 .contact__mail {
 	display: flex;
@@ -358,9 +359,8 @@ li:hover {
 }
 
 .contact__buttons {
+	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	gap: 12px;
 }
 

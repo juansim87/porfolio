@@ -35,18 +35,19 @@
 	}
 
 	.experience__content {
-		gap: 20px;
+		gap: 40px;
 	}
 
 	.experience__work {
 		width: 100%;
 		justify-content: flex-start;
 		align-items: flex-start;
-		gap: 20px;
+		gap: 8px;
 	}
 
 	.experience__name {
 		flex-direction: row;
+		align-items: center;
 		gap: 12px;
 	}
 
@@ -75,7 +76,7 @@
 	}
 
 	.skill__image {
-		width: 200px;
+		width: 160px;
 	}
 
 	.contact__content {
@@ -84,7 +85,6 @@
 	}
 
 	.contact__box {
-		flex-direction: row;
 		justify-content: flex-start;
 		align-items: flex-start;
 	}
@@ -96,7 +96,7 @@
 		--nav-font-size: 24px;
 		--title-font-size: 100px;
 		--subtitle-font-size: 38px;
-		--p-font-size: 28px;
+		--p-font-size: 24px;
 		--section-title-font-size: 60px;
 		--item-font-size: 44px;
 		--avatar-width: 260px;
@@ -149,6 +149,10 @@
 		gap: 40px;
 	}
 
+	.skill__image {
+		width: 140px;
+	}
+
 	.contact__content {
 		padding: 72px 0;
 	}
@@ -158,6 +162,8 @@
 @media (min-width: 1440px) {
 	:root {
 		--container-width: 75%;
+		--avatar-width: 300px;
+		--avatar-border-radius: 150px;
 	}
 
 	.divider{

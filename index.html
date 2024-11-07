@@ -48,9 +48,32 @@
 								no llamarte Rodrigor.
 							</p>
 						</div>
-						<div class="about-me__image">
-							<img src="/media/images/avatar.jpg" alt="" />
-						</div>
+						<picture class="about-me__image">
+							<source
+								srcset="/media/images/avatar-300px.avif"
+								media="(min-width: 1440px)"
+								type="image/avif"
+							/>
+							<source
+								srcset="/media/images/avatar-200px.avif"
+								media="(min-width: 1024px)"
+								type="image/avif"
+							/>
+							<source
+								srcset="/media/images/avatar-180px.avif"
+								media="(min-width: 768px)"
+								type="image/avif"
+							/>
+							<source
+								srcset="/media/images/avatar-140px.avif"
+								media="(max-width: 767px)"
+								type="image/avif"
+							/>
+							<img
+								src="/media/images/avatar.jpg"
+								alt="Foto de Juan Simón Abad"
+							/>
+						</picture>
 					</div>
 				</section>
 				<section id="experience">
@@ -82,40 +105,63 @@
 					<div class="projects__content container divider">
 						<h2>Proyectos</h2>
 						<div class="projects__captures">
-							<a href="">
+							<a href="https://github.com/juansim87/netflix-web-clone.git">
 								<div class="projects__item">
 									<div class="projects__name">
-										<img src="/media/logos/github-logo-white.svg" alt="logo de GitHub" />
+										<img
+											src="/media/logos/github-logo-white.svg"
+											alt="logo de GitHub"
+										/>
 										<h3>Web Netflix</h3>
 									</div>
 									<div class="projects__image">
+										<picture>
+											<source
+												srcset="/media/images/clon-netflix-captura-500px.webp"
+												type="image/webp"
+											/>
+											<source
+												srcset="/media/images/clon-netflix-captura-500px.avif"
+												type="image/avif"
+											/>
+											<img
+												src="/media/images/clon-netflix-captura-500px.jpg"
+												alt="captura del clon de la web de Netflix"
+											/>
+										</picture>
+									</div>
+								</div>
+							</a>
+							<a href="https://github.com/juansim87/eltiempo-web-clone.git">
+								<div class="projects__item">
+									<div class="projects__name">
 										<img
-											src="/media/images/clon-netflix-captura.jpg"
-											alt="captura del clon de la web de Netflix"
+											src="/media/logos/github-logo-white.svg"
+											alt="logo de GitHub"
+										/>
+										<h3>Web El Tiempo</h3>
+									</div>
+									<div class="projects__image">
+										<img
+											src="/media/images/clon-el-tiempo-captura-500px.jpg"
+											alt="captura del clon de la web de El Tiempo"
 										/>
 									</div>
 								</div>
 							</a>
-							<a href="">
-								<div class="projects__item"><div class="projects__name">
-									<img src="/media/logos/github-logo-white.svg" alt="logo de GitHub" />
-									<h3>Web El Tiempo</h3></div>
-									<div class="projects__image">
+							<a href="https://github.com/juansim87/trello-web-clone.git">
+								<div class="projects__item">
+									<div class="projects__name">
 										<img
-											src="/media/images/clon-el-tiempo-captura.jpg"
-											alt="captura del clon de la web de Netflix"
+											src="/media/logos/github-logo-white.svg"
+											alt="logo de GitHub"
 										/>
+										<h3>Web Trello</h3>
 									</div>
-								</div>
-							</a>
-							<a href="">
-								<div class="projects__item"><div class="projects__name">
-									<img src="/media/logos/github-logo-white.svg" alt="logo de GitHub" />
-									<h3>Web Trello</h3></div>
 									<div class="projects__image">
 										<img
-											src="/media/images/clon-trello-captura.jpg"
-											alt="captura del clon de la web de Netflix"
+											src="/media/images/clon-trello-captura-500px.jpg"
+											alt="captura del clon de la web de Trello"
 										/>
 									</div>
 								</div>
@@ -159,8 +205,8 @@
 							</div>
 							<div class="skill__item">
 								<h3>React</h3>
-								<div class="skill__image">
-									<img src="/media/logos/react-logo.png" alt="logo de React" />
+								<div class="skill__image">									
+									<img src="/media/logos/react-logo.webp" alt="logo de React" />
 								</div>
 							</div>
 							<div class="skill__item">
@@ -231,8 +277,8 @@
 									</div>
 								</div>
 								<div class="contact__buttons">
-									<button type="reset">Limpiar campos</button>
-									<button type="submit">Enviar información</button>
+									<!-- <button type="reset">Limpiar campos</button> -->
+									<button type="submit">Registrar</button>
 								</div>
 							</div>
 						</form>
