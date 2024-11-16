@@ -49,14 +49,13 @@ a {
 	--item-font-size: 24px;
 	--avatar-width: 140px;
 	--avatar-border-radius: 70px;
-	--primary-color: #c4c4c4;
-	--secondary-color:#F4E409;
+	--primary-color: #272c40 ;
+	--secondary-color:#e1d8cf;
 	--section-divider: 1px solid var(--primary-color);
 }
 
 body {
-	background-color: var(--secondary-color);
-	background-image: linear-gradient(90deg, #000 15%, #737373 87%);
+	
 }
 
 h1 {
@@ -96,6 +95,7 @@ li:hover {
 }
 
 .body__container {
+	background-color: var(--secondary-color);
 	color: var(--primary-color);
 }
 
@@ -370,7 +370,7 @@ li:hover {
 }
 
 .contact__item p a {
-	color: #F4E409;
+	color: #02A9EA;
 }
 
 .contact__buttons {
