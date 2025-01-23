@@ -54,9 +54,6 @@ a {
 	--section-divider: 1px solid var(--primary-color);
 }
 
-body {
-	
-}
 
 h1 {
 	font-size: var(--title-font-size);
