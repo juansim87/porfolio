@@ -1,23 +1,5 @@
-# Proyecto Final del Módulo de CSS
 
-## Objetivo
 
-Desarrollar una página web estilizada que demuestre tu conocimiento de CSS, incluyendo la capacidad de crear un diseño adaptable, bien estructurado y visualmente atractivo. Este proyecto debe reflejar una comprensión sólida del modelo de caja, Flexbox, diseño responsive, y los principios básicos de una arquitectura CSS efectiva.
-
-Tendrás libertad para elegir el propósito y contenido de tu sitio web. Al igual que en el proyecto de HTML, debes comunicar tu idea al mentor para su aprobación antes de comenzar. Puedes inspirarte en las ideas propuestas en el proyecto anterior o crear una web completamente nueva.
-
-## Requisitos Específicos del Proyecto
-
-### 1. Idea y Planteamiento
-
-El paso previo a cualquier desarrollo es pensar bien la idea y anotar que funcionalidades tendrá. Cuando hablamos de funcionalidades es como pensar en el usuario. Este pequeño ejercicio lo practicarás y aprenderás al detalle más adelante en el próximo bloque. Un ejemplo es algo como:
-
--   El usuario debe poder entrar en la web
--   El usuario debe poder hacer click en la barra de navegación y ver otras páginas
--   El usuario debe poder ver la pantalla en movil, tablet y escritorio
--   El usuario debe poder ver los productos de la tienda.
-
-Cuando tengas la idea de la web que quieras programar, el siguiente paso es verificar con tu mentor (Juan) que sea una idea viable. Para ello contacta por discord o whatsapp y una vez validada tu idea por parte del mentor, pasarás a plantearla en papel.
 
 ### 2. Planteamiento en Papel o Digital
 
@@ -88,10 +70,6 @@ El proyecto debe partir de una estructura HTML clara y semántica, como se abord
 
 -   Desarrolla tu sitio web utilizando la metodología mobile-first, asegurándote de que el diseño pequeño sea el predeterminado y escale a medida que aumente el tamaño de pantalla. Lo hemos hecho muchas veces en clase.
 
-### 2. Flexbox y Grid en Combinación
-
--   Implementa CSS Grid para una sección de tu sitio (por ejemplo, la disposición de artículos o una galería de imágenes), y combina su uso con Flexbox en otros elementos. Recuerda, GRID para crear cuadrículas y FLEXBOX para posicionar elementos.
-
 ### 3. Variables CSS
 
 -   Usa variables CSS (`--color-principal`, `--font-principal`) para manejar los colores, fuentes y otros valores reutilizables en tu proyecto. Esto te permitirá mantener un código más limpio y fácil de mantener.
@@ -116,10 +94,80 @@ No obstante, la idea de tu proyecto es recomendable que sea tuya propia. Es deci
 4. **Galería de Fotografías:** Crea una galería de imágenes responsiva con CSS Grid, que se ajuste a diferentes tamaños de pantalla.
 5. **Tienda Online:** Desarrolla el frontend de una tienda online con un diseño responsive, donde los productos se ajusten a diferentes tamaños de pantalla.
 
-## Instrucciones para la Entrega
 
--   El proyecto lo tendrás que subir a tu cuenta de Github de manera pública
-- Tienes que hacer commits frecuentes. En la descripción de cada commit debes explicar los cambios que haces.
--   El código debe estar bien organizado y documentado. Esta documentación del proyecto puede consistir en los bocetos en papel.
--   Juega al "rol" descrito en el proyecto de HTML cuando entregues tu proyecto a tu mentor.
-- Deberás tener al menos 3 páginas de HTML y una arquitectura de CSS como la que hemos visto en clase, separando estilos globales en diferentes archivos
+
+
+
+# Nombre del Proyecto
+
+Este repositorio contiene mi porfolio, creado desde cero para el máster de ElevenCode como uno de los proyectos finales de HTML y CSS.
+
+---
+
+## Tabla de Contenido
+1. [Demo](#demo)  
+2. [Descripción del Proyecto](#descripción-del-proyecto)  
+3. [Objetivos](#objetivos)  
+4. [Tecnologías Usadas](#tecnologías-usadas)  
+5. [Instalación y Configuración](#instalación-y-configuración)  
+6. [Buenas Prácticas](#buenas-prácticas)  
+7. [Licencias](#licencias)  
+8. [Autoría y Créditos](#autoría-y-créditos)  
+9. [Notas Adicionales / FAQ](#notas-adicionales--faq)  
+
+---
+
+## Demo
+[Porfolio Juan Simón Abad](https://https://juan-simon-porfolio.netlify.app/)
+
+---
+
+## Descripción del Proyecto
+Proyecto de HTML5 y CSS3 dirigido a mostrar mi experiencia laboral, mis proyectos y mi habilidades de programación. Se han utilizado buenas prácticas como etiquetado ARIA y metodología BEM.
+
+---
+
+## Objetivos
+1. Crear un diseño adaptable, bien estructurado y visualmente atractivo.
+2. Reflejar la comprensión sólida del modelo de caja, Flexbox, diseño responsive, y los principios básicos de una arquitectura CSS efectiva.
+3. Desarrollar creatividad a la hora de iniciar un proyecto web desde cero.
+4. Establecer las funcionalidades que tendrá para el usuario, en este caso visualizar mi trabajo y poder contactar conmigo llegado el caso.
+5. El usuario debe poder acceder desde móvil, tablet u ordenador. El diseño será mobile first.
+
+---
+
+## Tecnologías Usadas
+- **HTML5**
+- **CSS3**
+- **Herramientas de desarrollo**: Visual Studio Code
+
+---
+
+## Instalación y Configuración
+1. **Clonar el repositorio**  
+   ```bash
+   git clone https://github.com/juansim87/porfolio.git
+---
+
+## Buenas Prácticas
+- **Metodología BEM**
+- **Planteamiento previo:**
+
+![Porfolio Desktop](/docs/photos/porfolio-desktop.jpg "Logo Title Text 1")
+
+- **Este planteamiento está basado en el** [diseño de kenneth ikye](https://www.behance.net/gallery/208543069/Portfolio-UI-and-Frontend-web-dev?tracking_source=search_projects|frontend+portfolio&l=3).
+---
+
+## Licencias
+La web ha sido diseñada con elementos de libre uso, incluyendo los logos de las tecnologías que aparecen en la sección de skills.
+
+---
+
+## Autoría y Créditos
+Este proyecto ha sido totalmente desarrollado por Juan Simón Abad.
+
+---
+
+## Notas Adicionales / FAQ
+1. Aunque el proyecto es mobile first, el planteamiento previo está hecho en formato desktop para una mejor visualización de los contenedores, que con flexbox parte en "flex-direction: column" en el responsive de móvil.
+2. Durante el desarrollo he obviado el footer porque me parecía más interesante practicar con las etiquetas "section".
