@@ -18,7 +18,7 @@ Este repositorio contiene mi porfolio, creado desde cero para el máster de Elev
 ---
 
 ## Demo
-[Porfolio Juan Simón Abad](https://https://juan-simon-porfolio.netlify.app/)
+[Porfolio Juan Simón Abad](https://juan-simon-porfolio.netlify.app/)
 
 ---
 
