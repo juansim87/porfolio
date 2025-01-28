@@ -54,7 +54,7 @@ Proyecto de HTML5 y CSS3 dirigido a mostrar mi experiencia laboral, mis proyecto
 - **Uso de variables en CSS**
 - **Planteamiento previo:**
 
-![Porfolio Desktop](/docs/photos/porfolio-desktop.jpg "Logo Title Text 1")
+![Porfolio Desktop](/docs/photos/porfolio-desktop.jpg "Diseño previo porfolio")
 
 - **Este planteamiento está basado en el** [diseño de kenneth ikye](https://www.behance.net/gallery/208543069/Portfolio-UI-and-Frontend-web-dev?tracking_source=search_projects|frontend+portfolio&l=3).
 ---
