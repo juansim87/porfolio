@@ -86,9 +86,9 @@ label {
 }
 
 li:hover {
-	background-color: var(--bg-color);
-	color: black;
-	transition: ease-in 0.2s;
+	/* background-color: var(--bg-color); */
+	color: #C47335;
+	transition: ease-in 0.15s;
 }
 
 .body__container {
@@ -110,12 +110,13 @@ li:hover {
     align-items: center;
     cursor: pointer;
     border-radius: 50%;
-    background: none;
+    /* background: none; */
     transition: all 0.3s;
 }
 
 .theme-toggle img {
     width: 100%;
+	
 }
 
 .container {
