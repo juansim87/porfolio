@@ -73,3 +73,4 @@ Este proyecto ha sido totalmente desarrollado por Juan Simón Abad.
 1. Aunque el proyecto es mobile first, el planteamiento previo está hecho en formato desktop para una mejor visualización de los contenedores, que con flexbox parte en "flex-direction: column" en el responsive de móvil.
 2. Durante el desarrollo he obviado el footer porque me parecía más interesante practicar con las etiquetas "section".
 3. Se ha elegido una paleta de colores que comparte con la presentación del CV y del perfil de LinkedIn.
+4. Las funciones de envío para el contacto no son funcionales, aunque se valora implementarlas a futuro con manejo de backend.
