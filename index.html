@@ -15,6 +15,7 @@
 			href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="index.js" defer></script>
 		<title>Juan Simón - Frontend Engineer</title>
 	</head>
 	<body>
@@ -27,6 +28,11 @@
 						<li><a href="#projects">Proyectos</a></li>
 						<li><a href="#skills">Habilidades</a></li>
 						<li><a href="#contact">Contacto</a></li>
+						<li id="theme-toggle" class="theme-toggle">
+							<div id="theme-toggle" class="theme-toggle">
+								<img id="theme-icon" src="/media/icons/moon.png" alt="Modo Claro">
+							</div>
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -139,14 +145,18 @@
 											alt="captura del clon de la web de El Tiempo"
 										/>
 									</picture>
-									<div class="projects__links"> 
-										<p>|</p><a href="https://cirene.netlify.app/">Demo</a><p>|</p>
+									<div class="projects__links">
+										<p>|</p>
+										<a href="https://cirene.netlify.app/">Demo</a>
+										<p>|</p>
 									</div>
 								</div>
 							</div>
 							<div class="projects__item">
 								<div class="projects__name">
-									<a href="https://github.com/juansim87/cliente-veterinario.git">
+									<a
+										href="https://github.com/juansim87/cliente-veterinario.git"
+									>
 										<img
 											src="/media/logos/github-logo-blue.webp"
 											alt="logo de GitHub"
@@ -169,8 +179,12 @@
 											alt="captura del clon de la web de El Tiempo"
 										/>
 									</picture>
-									<div class="projects__links"> 
-										<p>|</p><a href="https://proyecto-cliente-veterinario.netlify.app">Demo</a><p>|</p>
+									<div class="projects__links">
+										<p>|</p>
+										<a href="https://proyecto-cliente-veterinario.netlify.app">
+											Demo
+										</a>
+										<p>|</p>
 									</div>
 								</div>
 							</div>
@@ -199,8 +213,10 @@
 											alt="captura de la web Pokedex-Juanchodex"
 										/>
 									</picture>
-									<div class="projects__links"> 
-										<p>|</p><a href="https://juanchodex.netlify.app">Demo</a><p>|</p>
+									<div class="projects__links">
+										<p>|</p>
+										<a href="https://juanchodex.netlify.app">Demo</a>
+										<p>|</p>
 									</div>
 								</div>
 							</div>
@@ -230,9 +246,15 @@
 										/>
 									</picture>
 									<div class="projects__links">
-										<p>|</p><a href="https://trecho-web-clon.netlify.app">Demo</a>
 										<p>|</p>
-										<a href="https://web.archive.org/web/20250118052617/https://trello.com/es">Web original</a><p>|</p>
+										<a href="https://trecho-web-clon.netlify.app">Demo</a>
+										<p>|</p>
+										<a
+											href="https://web.archive.org/web/20250118052617/https://trello.com/es"
+										>
+											Web original
+										</a>
+										<p>|</p>
 									</div>
 								</div>
 							</div>
@@ -261,12 +283,16 @@
 											alt="captura del clon de la web de El Tiempo"
 										/>
 									</picture>
-									<div class="projects__links"> 
-										<p>|</p><a href="https://riscord-web-clon.netlify.app">Demo</a><p>|</p><a
-										href="https://web.archive.org/web/20240416023613/https://discord.com/"
-									>
-										Web original
-									</a><p>|</p>
+									<div class="projects__links">
+										<p>|</p>
+										<a href="https://riscord-web-clon.netlify.app">Demo</a>
+										<p>|</p>
+										<a
+											href="https://web.archive.org/web/20240416023613/https://discord.com/"
+										>
+											Web original
+										</a>
+										<p>|</p>
 									</div>
 								</div>
 							</div>
@@ -296,13 +322,15 @@
 										/>
 									</picture>
 									<div class="projects__links">
-										<p>|</p><a href="https://movieflix-juan-simon.netlify.app">Demo</a>
+										<p>|</p>
+										<a href="https://movieflix-juan-simon.netlify.app">Demo</a>
 										<p>|</p>
 										<a
 											href="https://web.archive.org/web/20240516121505/https://www.netflix.com/us-es/"
 										>
 											Web original
-										</a><p>|</p>
+										</a>
+										<p>|</p>
 									</div>
 								</div>
 							</div>
@@ -332,9 +360,11 @@
 										/>
 									</picture>
 									<div class="projects__links">
-										<p>|</p><a href="https://eltiempo-web-clon.netlify.app">Demo</a>
 										<p>|</p>
-										<a href="https://www.eltiempo.es/">Web original</a><p>|</p>
+										<a href="https://eltiempo-web-clon.netlify.app">Demo</a>
+										<p>|</p>
+										<a href="https://www.eltiempo.es/">Web original</a>
+										<p>|</p>
 									</div>
 								</div>
 							</div>
@@ -364,13 +394,18 @@
 										/>
 									</picture>
 									<div class="projects__links">
-										<p>|</p><a href="https://clon-bmw2020.netlify.app">Demo</a>
 										<p>|</p>
-										<a href="https://web.archive.org/web/20200301115629/https://www.bmw.es/es/index.html">Web original</a><p>|</p>
+										<a href="https://clon-bmw2020.netlify.app">Demo</a>
+										<p>|</p>
+										<a
+											href="https://web.archive.org/web/20200301115629/https://www.bmw.es/es/index.html"
+										>
+											Web original
+										</a>
+										<p>|</p>
 									</div>
 								</div>
 							</div>
-							
 						</div>
 					</div>
 				</section>

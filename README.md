@@ -74,3 +74,4 @@ Este proyecto ha sido totalmente desarrollado por Juan Simón Abad.
 2. Durante el desarrollo he obviado el footer porque me parecía más interesante practicar con las etiquetas "section".
 3. Se ha elegido una paleta de colores que comparte con la presentación del CV y del perfil de LinkedIn.
 4. Las funciones de envío para el contacto no son funcionales, aunque se valora implementarlas a futuro con manejo de backend.
+5. Añadido el 30 de enero 2025 un modo oscuro con JS.

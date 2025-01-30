@@ -49,9 +49,9 @@ a {
 	--item-font-size: 24px;
 	--avatar-width: 140px;
 	--avatar-border-radius: 70px;
-	--primary-color: #272c40 ;
-	--secondary-color:#e1d8cf;
-	--section-divider: 1px solid var(--primary-color);
+	--bg-color:#e1d8cf;
+	--text-color: #272c40 ;
+	--section-divider: 1px solid var(--text-color);
 }
 
 
@@ -86,14 +86,36 @@ label {
 }
 
 li:hover {
-	background-color: var(--secondary-color);
+	background-color: var(--bg-color);
 	color: black;
 	transition: ease-in 0.2s;
 }
 
 .body__container {
-	background-color: var(--secondary-color);
-	color: var(--primary-color);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: all 0.3s ease-in-out;
+}
+
+.dark-mode {
+    --bg-color: #272c40;
+    --text-color: #e1d8cf;
+}
+
+.theme-toggle {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    transition: all 0.3s;
+}
+
+.theme-toggle img {
+    width: 100%;
 }
 
 .container {

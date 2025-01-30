@@ -11,6 +11,9 @@
 		--avatar-border-radius: 90px;
 	}
 
+	.theme-toggle {
+		width: 28px;}
+
 	.divider {
 		padding: 60px 0;
 	}
@@ -97,7 +100,7 @@
 @media (min-width: 1024px) {
 	:root {
 		--container-width: 80%;
-		--nav-font-size: 24px;
+		--nav-font-size: 22px;
 		--title-font-size: 100px;
 		--subtitle-font-size: 38px;
 		--p-font-size: 24px;
